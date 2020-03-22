@@ -1,0 +1,47 @@
+\documentclass{report}
+\usepackage{blindtext}
+
+\begin{document}
+
+\begin{center}
+	\begin{tabular}{||ccc|c|}
+		\hline
+		cell1 & cell2 & cell3 \\
+		cell4 & cell5 & cell6 \\
+		cell7 & & &\\
+		\hline % hor line
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{||ccc|c|}
+		\hline
+		Col1 & Col2 & Col3 & Col4 \\ [1ex]
+		\hline
+		\hline
+		cell1 & cell2 & cell3 \\ [1ex]
+		cell4 & cell5 & cell6 \\
+		cell7 & & &\\
+		\hline % hor line
+	\end{tabular}
+\end{center}
+
+Table \ref{table:data} is an example of referencial \LaTeX{} elements
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c|c|c|c|}
+	\hline
+	Col1 & Col2 & Col3 & Col4 \\ [0.5ex]
+	\hline
+	\hline
+	cell1 & cell2 & cell3 & \\
+	cell4 & cell5 & cell6 & \\
+	cell7 & & &\\
+	\hline % hor line
+\end{tabular}
+\caption{Table is good}
+\label{table:data}
+\end{table}
+
+\end{document}
